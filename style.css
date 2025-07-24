@@ -82,6 +82,8 @@ section{
 .card-container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    gap: 50px;
+    
 }
     
 .card{
@@ -91,7 +93,12 @@ section{
     width: 170px;
     justify-content: center;
     align-items: center;
+    margin-left: 30px;
     
+}
+/* badge */
+.badge{
+    width: 286px;
 }
 /* Plants Lover Section styles */
 .plants-lover{
@@ -110,7 +117,8 @@ section{
 /* resposive styles */
 @media screen and (max-width:576px) {
     .nav-bar{
-        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
             }
     .hide{
         display: none;
@@ -122,9 +130,11 @@ section{
         justify-content: left;
     }
     .card-container{
-        
+        display: grid;
         grid-template-columns: repeat(2,1fr);
-        
+        row-gap: 50px;
+        column-gap: 60px;
+    
     }
     .plants-lover{
        grid-template-columns: repeat(1,1fr);
