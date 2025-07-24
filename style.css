@@ -48,7 +48,7 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    padding-left: 30px;
     margin:0 auto;
     
 }
@@ -57,6 +57,7 @@ section{
     justify-content: space-around;
     gap: 40px; 
     align-items: center;
+    padding-right: 30px;
     
     
 }
@@ -73,7 +74,14 @@ section{
     font-size: 4rem;
     font-weight: bold;
 }
+.banner-image{
+    width: 100%;
+}
 /* plants description section styles */
+.plants{
+    display: block;
+    
+}
 .plants-description{
     text-align: center;
     margin: 50px auto;
@@ -82,7 +90,8 @@ section{
 .card-container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    gap: 50px;
+    gap: 10px;
+    
     
 }
     
@@ -90,29 +99,67 @@ section{
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 170px;
-    justify-content: center;
+    width: 100%;
     align-items: center;
-    margin-left: 30px;
     
+    
+}
+.card-image{
+    width: 100%;
 }
 /* badge */
 .badge{
     width: 286px;
+    position: relative;
+    left: 400px;
+    top: 260px;
+    
+    
 }
 /* Plants Lover Section styles */
 .plants-lover{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    margin: 100px auto;
     
     
+}
+.plants-lover-image{
+    width: 100%;
 }
 .plants-lover-description{
     padding-left: 100px;
     padding-right: 100px;
+    text-align: left;
     
     
 
+}
+/* latest deal section styles */
+.latest-deal{
+    text-align: center;
+}
+.latest-deal-image-container{
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row: 2 / span2;
+}
+.bloom{
+    background-image: url(assets/deal-bloom.png);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    width: 100%;
+}
+.ana{
+    background-image: url(assets/deal-ana.png);
+    background-repeat: no-repeat;
+}
+.zabo{
+    background-image: url(assets/deal-zabo.png);
+    background-repeat: no-repeat;
 }
 /* resposive styles */
 @media screen and (max-width:576px) {
@@ -133,11 +180,14 @@ section{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         row-gap: 50px;
-        column-gap: 60px;
+   
     
     }
     .plants-lover{
        grid-template-columns: repeat(1,1fr);
+    }
+    .plants-lover-description{
+        padding: 0;
     }
     
 }
