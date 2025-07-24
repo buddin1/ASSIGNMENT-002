@@ -46,11 +46,7 @@ section{
 img{
     width: 100%;
 }
-a{
-    text-decoration: none;
-    color: #8987A1;
 
-}
 
 /* header section (nav-bar) styles */
 .nav-bar{
@@ -272,6 +268,10 @@ a{
 }
 .footer li{
     list-style: none;
+}
+.footer li a{
+    text-decoration: none;
+    color: #8987A1;
 }
 .footer-1{
     display: grid;
