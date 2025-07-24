@@ -116,6 +116,7 @@ section{
         display: none;
     }
     .banner{
+        display: flex;
         flex-direction: column-reverse;
         
         justify-content: left;
