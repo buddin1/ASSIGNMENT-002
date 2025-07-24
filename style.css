@@ -61,6 +61,7 @@ img{
     justify-content: space-around;
     gap: 40px; 
     align-items: center;
+    justify-content: center;
     
     
     
@@ -70,9 +71,13 @@ img{
 .banner{
     display: flex;
     margin: 120px auto;
-    /* width: 1140px; */
-    /* padding: 16px; */
+    justify-content: center;
     
+   
+    
+}
+.banner-description{
+    width: 420px;
 }
 .banner-title{
     font-size: 4rem;
@@ -84,7 +89,7 @@ img{
 /* plants description section styles */
 .plants{
     display: block;
-    /* width: 1140px; */
+    
     margin: 0 auto;
     
 }
@@ -97,6 +102,7 @@ img{
 .card-container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    column-gap: 20px;
     
     
     
@@ -143,6 +149,7 @@ img{
     padding-left: 100px;
     padding-right: 100px;
     text-align: left;
+    width: 400px;
     
     
 
@@ -151,28 +158,60 @@ img{
 .latest-deal{
     text-align: center;
 }
-.latest-deal-image-container{
-    color: white;
-    justify-content: center;
-    align-items: center;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-row: 2 / span2;
+.deals{
+    margin: 120px 100px;
+    display: flex;
+    justify-content: first baseline;
 }
-.bloom{
+.container{
+    display: grid;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 200px 200px;
+    
+}
+.item-1{
+    border: 2px solid rgb(246, 244, 244);
+    border-radius: 20px;
     background-image: url(assets/deal-bloom.png);
     background-repeat: no-repeat;
-    border-radius: 10px;
-    width: 100%;
+    
+    width:100%;
+   
+    text-align: center;
+    color: #F5F8FF;
+    
+    
+
 }
-.ana{
+/* 
+.item-2{
+    border: 2px solid rgb(250, 250, 250);
+    border-radius: 20px;
     background-image: url(assets/deal-ana.png);
     background-repeat: no-repeat;
+    width: 100%;
+    padding: 50px;
+    
+    text-align: center;
+    color: #F5F8FF;
+    
+    
 }
-.zabo{
+.item-3{
+    border: 2px solid rgb(251, 250, 250);
+    border-radius: 20px;
     background-image: url(assets/deal-zabo.png);
     background-repeat: no-repeat;
-}
+    width: 100%;
+    padding: 130px;
+    
+    text-align: center;
+    color: #F5F8FF;
+    
+} */
 /* join section style */
 .join-section{
     background-image: url(assets/news-letter-bg.png);
@@ -275,5 +314,6 @@ img{
         grid-template-columns: repeat(1,1fr);
         
     }
+    
     
 }
